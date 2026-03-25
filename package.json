@@ -1,0 +1,21 @@
+{
+  "name": "eatmyface-amazon-ads-agent",
+  "version": "1.0.0",
+  "description": "Daily Amazon Ads performance analysis and optimization agent",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "get-token": "npx tsx src/get-refresh-token.ts",
+    "test-api": "npx tsx src/test-api-connection.ts",
+    "analyze": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0"
+  }
+}
